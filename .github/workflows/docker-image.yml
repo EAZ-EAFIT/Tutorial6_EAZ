@@ -22,4 +22,4 @@ jobs:
         run: docker build . -f Dockerfile -t EAZ-EAFIT/Tutorial6_EAZ:latest
 
       - name: Push image to Docker Hub
-        run: docker push EAZ-EAFIT/Tutorial6_EAZ:latest
+        run: docker push eaz3/express-randomquotes:latest
