@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
 
       - name: Build the Docker image
-        run: docker build . -f Dockerfile -t EAZ-EAFIT/Tutorial6_EAZ:latest
+        run: docker build . -f Dockerfile -t eaz-eafit/tutorial6_eaz:latest
 
       - name: Push image to Docker Hub
         run: docker push eaz3/express-randomquotes:latest
