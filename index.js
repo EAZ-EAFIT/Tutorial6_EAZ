@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
     const length = phrases.length;
     const number = Math.floor(Math.random() * length);
-    res.send(phrases[number])
+    res.send(phrases[number] + " - Container Id: "+os.hostname())
 
 })
 
